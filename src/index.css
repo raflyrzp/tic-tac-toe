@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #282c34; /* Ganti warna latar belakang */
+  color: #fff; /* Warna teks */
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #61dafb; /* Warna border */
+  background-color: #61dafb; /* Warna latar belakang */
+  font-size: 1.5rem; /* Ukuran teks */
+  font-weight: bold;
+  color: #282c34; /* Warna teks di dalam square */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+  border: 1px solid #282c34;
+}
+
+.square:hover {
+  background-color: #357edd; /* Warna latar belakang saat hover */
+  color: #fff; /* Warna teks saat hover */
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px; /* Lebar board */
+  height: 120px; /* Tinggi board */
+  margin: 0 auto; /* Posisikan di tengah */
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+.game-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.game-info ol li {
+  margin-bottom: 5px;
+}
+
+.game-info ol li:last-child {
+  margin-bottom: 0;
+}
+
+.game-info button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.game-info button:hover {
+  background-color: #357edd;
+  color: #fff;
+}
+
+.status {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.game-info h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.winning {
+  background-color: #357edd; /* Warna latar belakang garis kemenangan */
+}
+
+.reload {
+  background-color: white !important;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.reload:hover {
+  background-color: #444f66 !important;
+  color: white !important;
+}
